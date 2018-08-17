@@ -21,7 +21,7 @@
     "redux-saga"
   ],
   "license": "ISC",
-  "main": "drizzle.js",
+  "main": "dist/drizzle.js",
   "name": "drizzle",
   "version": "1.2.2"
 }
