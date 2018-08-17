@@ -8,7 +8,7 @@ import getAbi from './getAbi'
 export function generateStore (options) {
   // Redux DevTools
   const composeEnhancers =
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+    (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose
 
   // Preloaded state
   var preloadedState = {
